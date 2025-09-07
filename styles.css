@@ -1,0 +1,267 @@
+/* Global Styles */
+body {
+    font-family: "Radio Canada", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./forest_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+/* Layout Wrapper */
+#rootWrapper {
+    padding: 4rem;
+    min-width: 30rem;
+    max-width: 50rem;
+    border-radius: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quoteSymbol {
+    align-self: flex-start;
+    margin: 0;
+    font-size: 15rem;
+    line-height: 0.4;
+    transform: translateY(60%);
+}
+
+#quoteText {
+    text-align: center;
+    font-size: 1.3rem;
+    max-width: 48rem;
+    margin: 1.2rem 6rem;
+    margin-top: 0;
+}
+
+#quoteAuthor {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+}
+
+#getQuoteBtn {
+    border: none;
+    color: #0d1b2a;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    padding: 1rem 2.8rem;
+    background-color: #23df57;
+    box-shadow: 0 0 2px 2px #22d856;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #1ed552;
+    }
+}
+
+/* Responsive Design */
+/* Adjust sizes for tablets and smaller screens */
+
+@media (max-width: 1024px) {
+    #rootWrapper {
+        padding: 3rem;
+        min-width: 20rem;
+        max-width: 40rem;
+    }
+
+    #quoteText {
+        margin: 1.2rem 5rem;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #rootWrapper {
+        padding: 2.4rem;
+        max-width: 35rem;
+    }
+
+    #quoteSymbol {
+        font-size: 12rem;
+        transform: translateY(50%);
+    }
+
+    #quoteText {
+        margin: 0.8rem 3.4rem;
+        margin-top: 0;
+    }
+
+    #quoteAuthor {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 690px) {
+    #rootWrapper {
+        padding: 2.2rem;
+        max-width: 30rem;
+    }
+
+    #quoteSymbol {
+        font-size: 10rem;
+        transform: translateY(50%);
+    }
+
+    #quoteText {
+        font-size: 1.1rem;
+        margin: 0.8rem 3.2rem;
+        margin-top: 0;
+    }
+
+    #quoteAuthor {
+        font-size: 1.15rem;
+        margin-bottom: 2.6rem;
+    }
+
+    #getQuoteBtn {
+        font-size: 1rem;
+        padding: 0.8rem 2.4rem;
+    }
+}
+
+@media (max-width: 590px) {
+    #rootWrapper {
+        padding: 2rem;
+        max-width: 28rem;
+    }
+
+    #quoteSymbol {
+        font-size: 8rem;
+        transform: translateY(50%);
+    }
+
+    #quoteText {
+        font-size: 1rem;
+        margin: 0.8rem 2.4rem;
+        margin-top: 0;
+    }
+
+    #quoteAuthor {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    #getQuoteBtn {
+        font-size: 0.9rem;
+        padding: 0.6rem 2.2rem;
+    }
+}
+
+@media (max-width: 540px) {
+    #rootWrapper {
+        padding: 1.6rem;
+        max-width: 26rem;
+    }
+
+    #quoteSymbol {
+        font-size: 7rem;
+        transform: translateY(60%);
+    }
+
+    #quoteText {
+        font-size: 0.9rem;
+        margin: 0.8rem 2rem;
+        margin-top: 0;
+    }
+
+    #getQuoteBtn {
+        font-size: 0.9rem;
+        padding: 0.6rem 2.2rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width: 490px) {
+    #rootWrapper {
+        padding: 1.2rem;
+        max-width: 24rem;
+    }
+
+    #quoteSymbol {
+        font-size: 6rem;
+        transform: translateY(70%);
+    }
+
+    #quoteText {
+        font-size: 0.9rem;
+        margin: 0.4rem 2rem;
+        margin-top: 0;
+    }
+
+    #quoteAuthor {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+    #getQuoteBtn {
+        font-size: 0.9rem;
+        padding: 0.6rem 2rem;
+        margin-bottom: 0.6rem;
+    }
+}
+
+@media (max-width: 440px) {
+    #rootWrapper {
+        padding: 1.1rem;
+        max-width: 21rem;
+    }
+
+    #quoteText {
+        margin: 0.4rem 2.2rem;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    #rootWrapper {
+        margin: 1rem;
+        padding: 0.9rem;
+        max-width: auto;
+    }
+
+    #quoteText {
+        margin: 0.4rem 2.1rem;
+        margin-top: 0;
+    }
+
+    #quoteAuthor {
+        font-size: 0.9rem;
+        margin-bottom: 1.8rem;
+    }
+
+    #getQuoteBtn {
+        font-size: 0.85rem;
+        padding: 0.5rem 1.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+    #rootWrapper {
+        padding: 0.7rem;
+    }
+
+    #quoteText {
+        font-size: 0.8rem;
+        margin: 0.4rem 2rem;
+        margin-top: 0;
+    }
+
+    #quoteAuthor {
+        font-size: 0.85rem;
+    }
+
+    #getQuoteBtn {
+        font-size: 0.75rem;
+        padding: 0.5rem 1.6rem;
+    }
+}
